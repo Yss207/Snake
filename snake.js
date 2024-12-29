@@ -5,16 +5,16 @@ var cols = 20;
 var board;
 var context;
 
-window.onload = function(){
-    board = document.getElementById("board");
-    board.height = rows.blockSize;
-    board.width = cols.blockSize;
-    context = board.getContext("2d");
+window.onload = function () {
+  board = document.getElementById("board");
+  board.height = rows * blockSize;
+  board.width = cols * blockSize;
+  context = board.getContext("2d");
 
-    update();
+  update();
 }
 
-function update(){
-    context.fillStyle = "black";
-    context.fillRect(0, 0, board.width, board.height);
+function update() {
+  context.fillStyle = "black";
+  context.fillRect(0, 0, board.width, board.height);
 }
